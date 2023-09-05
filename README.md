@@ -1,5 +1,5 @@
 # Override
-Welcome to the Override project! This project is part the final security course at École 42. Override is a Capture The Flag (CTF) challenge where you will find vulnerabilities in code and exploit them to progress to the next level.
+Welcome to the Override project! This project is part the final security course at 42 School. Override is a Capture The Flag (CTF) challenge where you will find vulnerabilities in code and exploit them to progress to the next level.
 
 ## Project Overview
 There are a total of 9 mandatory levels and 1 bonus level. Each level contains a vulnerability, and your goal is to exploit it in order to retrieve the flag. This flag will be your key to the next level.
@@ -38,7 +38,9 @@ In every directory, you'll find the following files:
 In some directories you could find some tools / scripts used to exploit the binary of the level.
 
 There's two tools you can use on some levels :
+
 **- getenv.c**
+
 A file in C language, which compiles and launches on the machine, makes it possible to recover all the memory addresses of the environment variables.
 All you have to do is copy / paste the code inside a file on the host computer (usually in the /tmp folder) then:
 
@@ -50,6 +52,7 @@ All you have to do is copy / paste the code inside a file on the host computer (
 [...]
 
 **- find_offset.py**
+
 It is a small script in python, which will generate a pattern of the length of your choice, then search for the address transmitted by GDB at the time of the segfault to indicate the offset concerned (the EIP).
 No need to run the script on the host computer, you can just use it from your computer (Python must be installed):
 
