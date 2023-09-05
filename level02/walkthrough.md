@@ -25,21 +25,21 @@ We made a little bash script **find_flag.sh** to print all the value present on 
 ``chmod +x find_flag.sh``
 
 ``level02@OverRide:/tmp$ ./find_flag.sh``
->1 - 0x7fffffffe0d0 does not have access!      // non printable / adress
->[...nil...]
->4 - 0x2a2a2a2a2a2a2a2a does not have access!  // ********
->5 - 0x2a2a2a2a2a2a2a2a does not have access!  // ********
->6 - 0x7fffffffe2c8 does not have access!      // non printable / adress
->7 - 0x1f7ff9a08 does not have access!         // non printable
->[...nil...]
->20 - 0x100000000 does not have access!        // non printable
->[...nil...]
->22 - 0x756e505234376848 does not have access! // unPR47hH -> Hh74RPnu | **H**
->23 - 0x45414a3561733951 does not have access! // EAJ5as9Q -> Q9sa5JAE | **E**
->24 - 0x377a7143574e6758 does not have access! // 7zqCWNgX -> XgNWCqz7 | **R**
->25 - 0x354a35686e475873 does not have access! // 5J5hnGXs -> sXGnh5J5 | **E**
->26 - 0x48336750664b394d does not have access! // H3gPfK9M -> M9KfPg3H | **!**
->[...nil...]
+>1 - 0x7fffffffe0d0 does not have access!      // non printable / adress  
+>[...nil...]  
+>4 - 0x2a2a2a2a2a2a2a2a does not have access!  // ********  
+>5 - 0x2a2a2a2a2a2a2a2a does not have access!  // ********  
+>6 - 0x7fffffffe2c8 does not have access!      // non printable / adress  
+>7 - 0x1f7ff9a08 does not have access!         // non printable  
+>[...nil...]  
+>20 - 0x100000000 does not have access!        // non printable  
+>[...nil...]  
+>22 - 0x756e505234376848 does not have access! // unPR47hH -> Hh74RPnu | **H**  
+>23 - 0x45414a3561733951 does not have access! // EAJ5as9Q -> Q9sa5JAE | **E**  
+>24 - 0x377a7143574e6758 does not have access! // 7zqCWNgX -> XgNWCqz7 | **R**  
+>25 - 0x354a35686e475873 does not have access! // 5J5hnGXs -> sXGnh5J5 | **E**  
+>26 - 0x48336750664b394d does not have access! // H3gPfK9M -> M9KfPg3H | **!**  
+>[...nil...]  
 >28 - 0x383225202d203832 does not have access! // 82% - 82 -> 28 - %28 |
 
 We see that there is a bunch of character that could look like a flag. We must reverse the character that we got because it is wrote in little endian.
