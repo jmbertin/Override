@@ -4,6 +4,13 @@ import itertools
 import sys
 
 def create_pattern(length):
+    """
+    Generate a pattern of alternating characters and digits up to the specified length.
+    Parameters:
+    - length (int): The desired length of the pattern.
+    Returns:
+    - str: The generated pattern.
+    """
     pattern = ''
     chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz'
     digits = '0123456789'
@@ -15,7 +22,14 @@ def create_pattern(length):
     return pattern[:length]
 
 def find_offset(pattern, address):
-    # Convert address to string and reverse it due to little-endian format
+    """
+    Find the offset of a given address within the pattern.
+    Parameters:
+    - pattern (str): The pattern in which to search.
+    - address (str): The address to find.
+    Returns:
+    - int: The offset of the address within the pattern. Returns -1 if not found.
+    """
     search_pattern = ''.join([chr(int(address[i-2:i], 16)) for i in range(len(address), 2, -2)])
     try:
         return pattern.index(search_pattern)
