@@ -19,13 +19,15 @@ Upon inspection, it is evident that the program prompts for a login, then a seri
 To automate the process of obtaining valid serial numbers, we isolate the section of the code responsible for encoding the login into its verification serial. We then craft a keygen based on this logic (see resources/keygen.c).
 
 All that's left is to compile our keygen:
+
 ``gcc /tmp/keygen.c -std=c99 -o /tmp/keygen``
 
 ----
 
 ### Bypassing security
 
-On lance notre keygen, avec en argument le login souhaite :
+W launch our keygen, with the username we want :
+
 ``./keygen jbertin``
 >Serial for jbertin is: 6233795
 
