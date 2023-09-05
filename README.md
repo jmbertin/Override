@@ -86,4 +86,10 @@ Feel free to submit pull requests or issues if you find any mistakes or have sug
 
 ----
 
+**Authors are:**
+- [Blablupo / Julien Branchet](https://github.com/blablupo)
+- [Jean-michel Bertin](https://github.com/jmbertin)
+
+----
+
 **Note: Ensure that you follow ethical hacking guidelines. Do not use the knowledge gained here for malicious intentions. Always seek permission before attempting to exploit vulnerabilities in any system.**
