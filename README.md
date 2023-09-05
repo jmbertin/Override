@@ -87,7 +87,7 @@ Feel free to submit pull requests or issues if you find any mistakes or have sug
 ----
 
 **Authors are:**
-- [Blablupo / Julien Branchet](https://github.com/blablupo)
+- [Julien Branchet](https://github.com/blablupo)
 - [Jean-michel Bertin](https://github.com/jmbertin)
 
 ----
